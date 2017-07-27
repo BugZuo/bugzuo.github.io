@@ -90,12 +90,37 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="Hero">
-<meta property="og:url" content="http://bugzuo.github.io/archives/2017/06/index.html">
+<meta name="description" content="本来是打算从Tomcat7开始阅读源码的，可是奈何小编使用的是MacOS，Tomcat7依赖dbpc1.4版本，必须用JDK1.6编译，太过繁琐，遂着手Tomcat8…
+Environment
+MacOS
+JDK7
+Ant 1.8.x+
+
+Download1$ wget https://github.com/apache/tomcat/archive/TOMCAT_8_0_0.tar.gz
+目录结">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Tomcat 8 Code Study">
+<meta property="og:url" content="http://bugzuo.github.io/2017/07/21/Tomcat-7源码学习/index.html">
 <meta property="og:site_name" content="Hero">
+<meta property="og:description" content="本来是打算从Tomcat7开始阅读源码的，可是奈何小编使用的是MacOS，Tomcat7依赖dbpc1.4版本，必须用JDK1.6编译，太过繁琐，遂着手Tomcat8…
+Environment
+MacOS
+JDK7
+Ant 1.8.x+
+
+Download1$ wget https://github.com/apache/tomcat/archive/TOMCAT_8_0_0.tar.gz
+目录结">
+<meta property="og:updated_time" content="2017-07-26T06:37:58.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hero">
+<meta name="twitter:title" content="Tomcat 8 Code Study">
+<meta name="twitter:description" content="本来是打算从Tomcat7开始阅读源码的，可是奈何小编使用的是MacOS，Tomcat7依赖dbpc1.4版本，必须用JDK1.6编译，太过繁琐，遂着手Tomcat8…
+Environment
+MacOS
+JDK7
+Ant 1.8.x+
+
+Download1$ wget https://github.com/apache/tomcat/archive/TOMCAT_8_0_0.tar.gz
+目录结">
 
 
 
@@ -123,13 +148,13 @@
 
 
 
-  <link rel="canonical" href="http://bugzuo.github.io/archives/2017/06/"/>
+  <link rel="canonical" href="http://bugzuo.github.io/2017/07/21/Tomcat-7源码学习/"/>
 
 
 
 
 
-  <title>归档 | Hero</title>
+  <title>Tomcat 8 Code Study | Hero</title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -164,7 +189,7 @@
     
   
 
-  <div class="container sidebar-position-left  page-archive  ">
+  <div class="container sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -316,103 +341,246 @@
           <div id="content" class="content">
             
 
-  <section id="posts" class="posts-collapse">
-    <span class="archive-move-on"></span>
-
-    <span class="archive-page-counter">
-      
-      
-      
-        
-      
-      嗯..! 目前共计 6 篇日志。 继续努力。
-    </span>
-
+  <div id="posts" class="posts-expand">
     
-
-      
-      
-      
-
-      
-        
-        <div class="collection-title">
-          <h2 class="archive-year motion-element" id="archive-year-2017">2017</h2>
-        </div>
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2017/06/22/LeetCode-3Sum/" itemprop="url">
-              
-                <span itemprop="name">LeetCode - 3Sum</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-06-22T18:59:00+08:00"
-              content="2017-06-22" >
-          06-22
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-      
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2017/06/09/Spark-2-1-Get-Started/" itemprop="url">
-              
-                <span itemprop="name">Spark 2.1 Get Started</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-06-09T11:33:21+08:00"
-              content="2017-06-09" >
-          06-09
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-  </section>
 
   
 
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://bugzuo.github.io/2017/07/21/Tomcat-7源码学习/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="瓦力木有忧伤">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/uploads/head.jpeg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hero">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                Tomcat 8 Code Study
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-07-21T14:15:00+08:00">
+                2017-07-21
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2017/07/21/Tomcat-7源码学习/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/07/21/Tomcat-7源码学习/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+             <span id="/2017/07/21/Tomcat-7源码学习/" class="leancloud_visitors" data-flag-title="Tomcat 8 Code Study">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数 </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>本来是打算从Tomcat7开始阅读源码的，可是奈何小编使用的是MacOS，Tomcat7依赖dbpc1.4版本，必须用JDK1.6编译，太过繁琐，遂着手Tomcat8…</p>
+<h2 id="Environment"><a href="#Environment" class="headerlink" title="Environment"></a>Environment</h2><ul>
+<li>MacOS</li>
+<li>JDK7</li>
+<li>Ant 1.8.x+</li>
+</ul>
+<h2 id="Download"><a href="#Download" class="headerlink" title="Download"></a>Download</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ wget https://github.com/apache/tomcat/archive/TOMCAT_8_0_0.tar.gz</div></pre></td></tr></table></figure>
+<h2 id="目录结构"><a href="#目录结构" class="headerlink" title="目录结构"></a>目录结构</h2><ul>
+<li>java<br>  源码目录</li>
+<li>conf<br>  配置目录</li>
+<li>build.xml<br>  ant构建文件</li>
+<li>output<br>  默认编译输出目录</li>
+</ul>
+<h2 id="Build"><a href="#Build" class="headerlink" title="Build"></a>Build</h2><p>Tomcat是使用Ant工具来构建的，在BUILDING.txt中有详细说明<br>执行以下两步就可以deploy一个tomcat容器<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ cd &#123;tomcat.source&#125;</div><div class="line">$ ant</div></pre></td></tr></table></figure></p>
+<blockquote>
+<p><strong>NOTE</strong>  </p>
+<ol>
+<li>Tomcat默认是使用build.properties.default里的属性来进行构建的，推荐在源路径新建build.properties来构建自己的Tomcat，<br>若遇到Ant工具报错时，第一种可能性就是base.path没有设置正确，这个路径是用来下载Tomcat依赖环境的，Tomcat默认是<strong>/usr/share/java</strong>，/usr/*是需要root权限的，这里你设定一个方便操作的路径即可。</li>
+<li>报<strong>the archive file.tar.gz doesn’t exist</strong>,主要是dbcp2-2.0SNAPSHOT目标依赖文件不存在,到build.properties目录下查找官网地址，发现该版本已经不存在了，替换使用dbcp2-2.0.2-SNAPSHOT版本</li>
+</ol>
+</blockquote>
+<h2 id="Startup"><a href="#Startup" class="headerlink" title="Startup"></a>Startup</h2><ul>
+<li>数据统计<br>对Tomcat8做了个简单的数据统计，以*.java为结尾的文件，统计所有的’\n’字符。在根路径下统计，共计494831。在源代码路径下统计，共计362858。可以看出来，Tomcat的代码量还是相当庞大的&gt;_&lt;</li>
+<li>启动入口类<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">org.apache.catalina.startup.Bootstrap</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>我们简单的看一下类Doc:</p>
+<blockquote>
+<p>Bootstrap loader for Catalina.  This application constructs a class loader<br> for use in loading the Catalina internal classes (by accumulating all of the<br> JAR files found in the “server” directory under “catalina.home”), and<br> starts the regular execution of the container.  The purpose of this<br> roundabout approach is to keep the Catalina internal classes (and any<br>other classes they depend on, such as an XML parser) out of the system<br> class path and therefore not visible to application level classes.</p>
+</blockquote>
+<p>结合源码，可以看到，Bootstrap主要做两件事情，一个是初始化了Catalina(Tomcat)容器核心class以及依赖库的ClassLoader，此ClassLoader是应用级的ClassLoader，所以Tomcat自身的class以及依赖的任何第三方库都是对用户应用屏蔽的;另外就是启动Catalina(Tomcat)容器的初始化启动逻辑。</p>
+<pre><code>屏蔽原理:
+1. 基于JVM加载类的双亲委托机制 实现自定义ClassLoader
+2. 关键函数 Thread.currentThread().setContextClassLoader
+</code></pre><p>Catalina主要有3个ClassLoader (URLClassLoader):<br>在catalina.properties定义</p>
+<ul>
+<li>commonLoader<br>common.loader,负责加载${catalina.home}/lib以及${catalina.base}/lib下的jar包</li>
+<li>catalinaLoader<br>server.loader,自定义loader,默认是commonLoader</li>
+<li>sharedLoader<br>shared.loader,自定义loader,默认是commonLoader</li>
+</ul>
+<p>主程序入口类<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">org.apache.catalina.startup.Catalina</div></pre></td></tr></table></figure></p>
+<p>启动的两个关键方法</p>
+<ul>
+<li>load(String args[]);  <ol>
+<li>命令行解析</li>
+<li>初始化Server实例</li>
+</ol>
+</li>
+<li>start();</li>
+</ul>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+        
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/06/22/LeetCode-3Sum/" rel="next" title="LeetCode - 3Sum">
+                <i class="fa fa-chevron-left"></i> LeetCode - 3Sum
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/07/27/Java-Collection-toArray-踩坑/" rel="prev" title="Java Collection toArray 踩坑">
+                Java Collection toArray 踩坑 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        <!-- JiaThis Button BEGIN -->
+<div class="jiathis_style">
+  <a class="jiathis_button_tsina"></a>
+  <a class="jiathis_button_tqq"></a>
+  <a class="jiathis_button_weixin"></a>
+  <a class="jiathis_button_cqq"></a>
+  <a class="jiathis_button_douban"></a>
+  <a class="jiathis_button_renren"></a>
+  <a class="jiathis_button_qzone"></a>
+  <a class="jiathis_button_kaixin001"></a>
+  <a class="jiathis_button_copy"></a>
+  <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank"></a>
+  <a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" >
+  var jiathis_config={
+    hideMore:false
+  }
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+
+      
+    </div>
+  </div>
 
 
           </div>
@@ -420,6 +588,14 @@
 
 
           
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2017/07/21/Tomcat-7源码学习/"
+           data-title="Tomcat 8 Code Study" data-url="http://bugzuo.github.io/2017/07/21/Tomcat-7源码学习/">
+      </div>
+    
+  </div>
+
 
         </div>
         
@@ -439,8 +615,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/uploads/head.jpeg"
@@ -502,6 +687,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Environment"><span class="nav-number">1.</span> <span class="nav-text">Environment</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Download"><span class="nav-number">2.</span> <span class="nav-text">Download</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#目录结构"><span class="nav-number">3.</span> <span class="nav-text">目录结构</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Build"><span class="nav-number">4.</span> <span class="nav-text">Build</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Startup"><span class="nav-number">5.</span> <span class="nav-text">Startup</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -615,11 +816,9 @@
   
 
   
-  
-    <script type="text/javascript" id="motion.page.archive">
-      $('.archive-year').velocity('transition.slideLeftIn');
-    </script>
-  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.1"></script>
+
 
 
   
